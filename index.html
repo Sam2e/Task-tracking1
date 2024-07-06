@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="board">
+        <h2 class="board__title">Tasks</h2>
+        <form id="task-form">
+            <div class="input-container">
+                <input name="taskTitle" placeholder="Task title*" value="">
+            </div>
+            <div class="input-container">
+                <textarea name="taskDescription" placeholder="Task description*"></textarea>
+            </div>
+            <div class="input-container">
+                <select name="taskPriority">
+                    <option value="Must haves">Must haves</option>
+                    <option value="Could haves">Could haves</option>
+                    <option value="Won't haves">Wouldn't haves</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Create task">
+            </div>
+        </form>
+        <div class="board__columns">
+            <div class="column" id="must-haves">
+                <h2 class="column__title">Must haves</h2>
+                <div class="column__cards"></div>
+            </div>
+            <div class="column" id="could-haves">
+                <h2 class="column__title">Could haves</h2>
+                <div class="column__cards"></div>
+            </div>
+            <div class="column" id="wont-haves">
+                <h2 class="column__title">Wouldn't haves</h2>
+                <div class="column__cards"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
